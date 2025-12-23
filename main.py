@@ -4,7 +4,8 @@ import json
 
 
 import os
-TOKEN = os.environ.get("8538985819:AAFXS45WJ_wFxb9TrO-cBqkM_gt-msxuy9g")
+TOKEN = os.environ.get("BOT_TOKEN")
+
 
 
 
@@ -44,3 +45,4 @@ if __name__ == "__main__":
     app.add_handler(CallbackQueryHandler(show_product))
     print("🤖 Bot is running...")
     app.run_polling()
+
