@@ -1,0 +1,23 @@
+[
+  {
+    "name": "انگشتر طلا",
+    "price_base": 12000000,
+    "labor_fee": 800000,
+    "tax": 300000,
+    "photo": "https://via.placeholder.com/300"
+  },
+  {
+    "name": "گردنبند طلا",
+    "price_base": 25000000,
+    "labor_fee": 1500000,
+    "tax": 600000,
+    "photo": "https://via.placeholder.com/300"
+  },
+
+
+
+
+
+
+
+]
