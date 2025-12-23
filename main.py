@@ -1,6 +1,39 @@
+
+from flask import Flask
+import threading
+
+flask_app = Flask('')
+@flask_app.route('/')
+def home(): return "I am alive"
+
+def run_flask():
+    flask_app.run(host='0.0.0.0', port=8080)
+
+# این خط را درست قبل از app.run_polling() قرار دهید:
+
+
+
+
+
+
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 import json
+
+
+from flask import Flask
+import threading
+
+flask_app = Flask('')
+@flask_app.route('/')
+def home(): return "I am alive"
+
+def run_flask():
+    flask_app.run(host='0.0.0.0', port=8080)
+
+# این خط را درست قبل از app.run_polling() قرار دهید:
+
 
 
 import os
@@ -44,7 +77,11 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(show_product))
     print("🤖 Bot is running...")
+  threading.Thread(target=run_flask).start()
+    
+    
     app.run_polling()
+
 
 
 
